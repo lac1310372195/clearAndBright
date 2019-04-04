@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Theme QnA for Hexo</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="shortcut icon" href="./favicon.png">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header>
+            <div class="row">
+                <div class="logo">
+                    <a href="javascript:;">Theme QnA for Hexo</a>
+                </div>
+                <nav class="nav_scroll">
+                    <ul>
+                        <li><a href="javascript:;">Home</a></li>
+                        <li><a href="javascript:;">Archive</a></li>
+                        <li><a href="javascript:;">Page Test</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="section" id="Search">
+            <div class="search_content">
+                <h3>
+                    Search
+                    <br>
+                    Find out if your question is answered here
+                </h3>
+                <div class="search-content">
+                    <div class="search-view">
+                        <div class="box">
+                            <input type="text" value="Enter Keyword">
+                            <div class="magnifying-glass">
+                                <i class="iconfont">&#xe610;</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="PostList">
+            <h2 class="center">Latest List</h2>
+            <div class="post-list">
+              行脚本部署:fab deploy
+
+root用户才有put()权限，其他用户需要开放。
+python安装virtualenv是在Scripy中安装virtualenv.exe，外部安装也行。
+windows和centos公用虚拟环境。
+启动虚拟环境:./source Script activate
+
+写好程序发布脚本，发布到服务器，启动虚拟环境，安装多余包，就可以python manage.py runserver 0.0.0.0:8000了。
+使用gunicorn和supervis操作，后台监听。
+gunicorn跑项目
+/usr/bin/gunicorn -c gunicorn.conf.py dami.wsgi:application & 据说用配置文件跑比较好
+加&跑在后台，不加可以马上停止。自动跑了？虚拟环境估计使用目前python环境。如何退出不知道，kill进程。
+
+
+
+查看和结束进程。配合supervisor使用项目。有空再试。
+
+
+注意：webstorm可以加密前端代码。更新host要重开chrome。
+将静态资源放在服务器nginx找到的目录下，root /opt/school_salary/;通过/static就可以找到。
+将静待资源，切到static下面上，跑在端口，用gitbash anywhere就可以从端口找到/static。
+将静态资源放在非服务器下，用nginx监听一个端口，nginx配置端口找到资源。
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><i class="iconfont">&#xe6be;
+                        </i></a></li>
+                        <li><a href="#"><i class="iconfont">&#xe605;
+                        </i></a></li>
+                        <li><a href="#"><i class="iconfont">&#xe617;
+                        </i></a></li>
+                    </ul>
+                </div>
+
+                <div class="copyright">
+                    © 2017 Theme QnA for Hexo | Provided By
+                    <a href="#">Kang Cheng</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
