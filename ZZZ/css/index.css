@@ -191,6 +191,8 @@ header .row .nav_scroll ul li:nth-of-type(1) a{
     max-width: 600px;
     margin: 0px auto;
     text-align: justify;
+    background:#DCE8E8;
+    color:black;
 }
 
 .PostList .post-list p {
@@ -254,4 +256,15 @@ footer .copyright {
     font-family: 'dosis.semibold';
     margin-top: 21px;
     text-align: center;
+}
+.wo{
+	background:#DCE8E8;
+	text-align: center;
+	width: 600px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+.wo p{
+	text-align: left;
+	color: black;
 }
